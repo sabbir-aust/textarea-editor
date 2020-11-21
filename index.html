@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+       
+    </head>
+    <body>
+        <h1>Text Area</h1>
+        <div class="toolbar">
+            <ul class="tool-list">
+                <li class="tool">
+                    <button type="button"  class="tool--btn" onclick="document.execCommand( 'justifyLeft',false,null);">Left</button>
+                </li>
+                <li class="tool">
+                    <button type="button" class="tool--btn" onclick="document.execCommand( 'justifyCenter',false,null);">Center</button>
+                </li>
+                <li class="tool">
+                    <button type="button" class="tool--btn" onclick="document.execCommand( 'justifyRight',false,null);">Right</button>
+                </li>
+                <li class="tool">
+                    <button type="button" class="tool--btn" onclick="document.execCommand( 'bold',false,null);">Bold</button>
+                </li>
+                <li class="tool">
+                    <button type="button" class="tool--btn" onclick="document.execCommand('italic',false,null);">Italic</button>
+                </li>
+                <li class="tool">
+                    <button type="button" class="tool--btn" onclick="document.execCommand( 'underline',false,null);">Underline</button>
+                </li>
+                <li class="tool">
+                    <button type="button" class="tool--btn" onclick="document.execCommand('insertorderedlist');">List</button>
+                </li>
+                <li class="tool">
+                    <button type="button" class="tool--btn" onclick="document.execCommand('insertUnorderedList');">UnorderedList</button>
+                </li>
+                <li class="tool">
+                    <button type="button" class="tool--btn" onclick="document.execCommand('undo',false,null);">Undo</button>
+                </li>
+                <li class="tool">
+                    <button type="button" class="tool--btn" onclick="document.execCommand('redo',false,null);">Redo</button>
+                </li>
+                <li class="tool">
+                    <button type="button" class="tool--btn" onclick="document.execCommand('subscript', false,null);">Subscript</button>
+                </li>
+                <li class="tool">
+                    <button type="button" class="tool--btn" onclick="document.execCommand('superscript', false,null);">Superscript</button>
+                </li>
+                <li class="tool">
+                    <button type="button" class="tool--btn" onclick="document.execCommand('fontName',false,'Arial');">Font Change</button>
+                </li>
+            </ul>
+        </div>
+        <div id="editor1" class="editable" contenteditable="true">
+
+        </div>
+    </body>
+</html>
