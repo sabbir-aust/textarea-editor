@@ -1,6 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
        
     </head>
     <body>
@@ -8,7 +9,9 @@
         <div class="toolbar">
             <ul class="tool-list">
                 <li class="tool">
-                    <button type="button"  class="tool--btn" onclick="document.execCommand( 'justifyLeft',false,null);">Left</button>
+                    <button 
+                        type="button" data-cmd="justifyLeft" class="tool--btn" >Left
+                    </button>
                 </li>
                 <li class="tool">
                     <button type="button" class="tool--btn" onclick="document.execCommand( 'justifyCenter',false,null);">Center</button>
@@ -17,13 +20,13 @@
                     <button type="button" class="tool--btn" onclick="document.execCommand( 'justifyRight',false,null);">Right</button>
                 </li>
                 <li class="tool">
-                    <button type="button" class="tool--btn" onclick="document.execCommand( 'bold',false,null);">Bold</button>
+                    <button type="button" id="textBold" class="tool--btn">Bold</button>
                 </li>
                 <li class="tool">
-                    <button type="button" class="tool--btn" onclick="document.execCommand('italic',false,null);">Italic</button>
+                    <button type="button" class="tool--btn" onclick=makeItalic()>Italic</button>
                 </li>
                 <li class="tool">
-                    <button type="button" class="tool--btn" onclick="document.execCommand( 'underline',false,null);">Underline</button>
+                    <button type="button" class="tool--btn" onclick=makeUnderline()>Underline</button>
                 </li>
                 <li class="tool">
                     <button type="button" class="tool--btn" onclick="document.execCommand('insertorderedlist');">List</button>
